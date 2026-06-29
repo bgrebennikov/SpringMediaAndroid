@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "SpringMedia"
 include(":app")
+include(":core:network")
