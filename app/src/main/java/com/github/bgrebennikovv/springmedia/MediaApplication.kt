@@ -1,6 +1,7 @@
 package com.github.bgrebennikovv.springmedia
 
 import android.app.Application
+import com.github.bgrebennikovv.network.networkModule
 import com.github.bgrebennikovv.springmedia.di.appModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -13,7 +14,10 @@ class MediaApplication : Application() {
         startKoin {
             androidLogger(Level.INFO)
             androidContext(this@MediaApplication)
-            modules(appModule)
+            modules(
+                appModule,
+                networkModule
+            )
         }
     }
 }

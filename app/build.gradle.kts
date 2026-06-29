@@ -76,8 +76,11 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
 
-    implementation("com.composables:icons-heroicons-outline-android:2.2.1")
-    implementation("com.composables:icons-heroicons-solid-android:2.2.1")
-    implementation("com.composables:icons-heroicons-mini-android:2.2.1")
-    implementation("com.composables:icons-heroicons-micro-android:2.2.1")
+    implementation(libs.icons.heroicons.outline.android)
+    implementation(libs.icons.heroicons.solid.android)
+    implementation(libs.icons.heroicons.mini.android)
+    implementation(libs.icons.heroicons.micro.android)
+
+    implementation(project(":core:network"))
+
 }
